@@ -1,0 +1,62 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribut srcset</title>
+
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        .img-container {
+            margin: 0;
+        }
+        @media screen and (min-width: 760px) {
+            .img-container {
+                margin: 0 4rem;
+            }
+        }
+
+        @media screen and (min-width: 1150px) {
+            .img-container {
+                margin: 0 8rem;
+            }
+        }
+        /* CSS doplň sem */¨
+        .img--resposive {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .img--flex{
+             max-width: 100%;
+             object-fit: cover;
+             object-position: bottom left;
+             aspect-ratio: 3/2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <figure class="img-container">
+            <!-- img doplň sem -->
+            <img srcset="img\OknoModernitySmall.jpg 480w, img\OknoModernityMedium.jpg 960w, img\OknoModernityBig.jpg 1920w" src="img\OknoModernityMedium.jpg" sizes="100vw" alt="Moderní okno"/>
+        </figure>
+        <div class="text-box">
+            <figure class="text">
+                <blockquote class="text__quote">
+                    “To me, photography is an art of observation. It's about finding something interesting in an
+                    ordinary place… I've found it has little to do with the things you see and everything to do with the
+                    way you see them.”
+                </blockquote>
+                <figcaption class="text__author">
+                    Elliott Erwitt
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    </div>
+</body>
