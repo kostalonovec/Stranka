@@ -43,7 +43,14 @@
     <main>
         <figure class="img-container">
             <!-- img doplň sem -->
-            <img srcset="img\OknoModernitySmall.jpg 480w, img\OknoModernityMedium.jpg 960w, img\OknoModernityBig.jpg 1920w" src="img\OknoModernityMedium.jpg" sizes="100vw" alt="Moderní okno"/>
+            <img srcset="img\OknoModernitySmall.jpg 480w, 
+                         img\OknoModernityMedium.jpg 960w, 
+                         img\OknoModernityBig.jpg 1920w"  
+            sizes="(max-width: 480px) 480px, 
+                   (max-width: 960px) 960px, 
+                   1920px" 
+            src="img\OknoModernityMedium.jpg"
+            alt="Moderní okno">
         </figure>
         <div class="text-box">
             <figure class="text">
